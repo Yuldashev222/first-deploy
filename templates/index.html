@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>Products</h1>
+
+<ul>
+    {% for product in products %}
+        <li>=================================</li>
+        <li><b>number: </b>{{ forloop.counter }}</li>
+        <li><b>name: </b>{{ product.name }}</li>
+        <li><b>price: </b>{{ product.price }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
